@@ -21,9 +21,8 @@ popmap<-read.csv("popmaps/popmap_lowcov.csv")
 
 #Add population info, setting up the population array
 #popmap5
-pop(focal_gl) <- c("NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "sacramento", "sacramento", "sacramento", "sacramento", "wht", "wht", "wht", "wht", "wht", "wht", "wht", "wht", "wht", "rio")
-#popmap8
-pop(focal_gl) <- c("jhm", "jhm", "jhm", "jhm", "sdc", "sdc", "sdc", "sdc", "sjn", "sjn", "sjn", "sjn", "jmz", "jmz", "jmz", "jmz", "isa", "isa", "isa", "isa", "bda", "bda", "bda", "bda", "sac", "sac", "sac", "sac", "wht", "wht", "wht", "wht", "sjn", "sjn", "wht", "wht", "wht", "wht", "wht", "isa")
+pop(focal_gl) <- c("NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NE", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "NW", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "rio", "sacramento", "sacramento", "sacramento", "sacramento", "sacramento", "sacramento", "sacramento", "sacramento", "sacramento", "sacramento", "sacramento", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white", "white")
+
 #Run PCA
 focal_pca <- glPca(focal_gl, n.cores=4, nf=4)
 #Not really great, but can be helpful for visualizing potentially problematic samples
